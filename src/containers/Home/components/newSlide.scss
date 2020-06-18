@@ -1,0 +1,30 @@
+.slider {
+    margin-top: 100px;
+    text-align: center;
+    width: 50%;
+    box-sizing: border-box;
+    border: 1px solid red;
+    display: flex;
+    padding: 0;
+    position: relative;
+    .slide {
+        border: 1px solid blue;
+        min-width: 100%;
+        margin: 30px 0;
+        transition: 1s;
+    }
+    .onClickLeft {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 5%;
+        height: 20px;
+    }
+    .onClickRight {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 5%;
+        height: 20px;
+    }
+}
