@@ -53,9 +53,11 @@
           margin: auto;
           .image-adv-item {
             width: 100%;
+            
           }
           .image-adv-item-after {
             display: none;
+            
           }
         }
         .wrapper-img-adv-item:hover {
@@ -114,12 +116,14 @@
   .collection {
     width: 100%;
     display: flex;
+    padding-bottom: 30px;
     .wrapper-collection-new {
       width: 75%;
       .collection-new {
         width: 100%;
         .collection-new-top {
           width: 100%;
+          height: 100px;
           .text-collection-new-top {
             font-size: 30px;
             font-weight: 700;
@@ -190,6 +194,10 @@
                   font-size: 18px;
                   font-weight: 700;
                 }
+                .title-product:hover {
+                  color: #ff72b4;
+                  cursor: pointer;
+                }
                 .description-product {
                   width: 100%;
                   font-size: 14px;
@@ -199,6 +207,7 @@
                 }
                 .wrapper-list-product-item {
                   display: flex;
+                  position: relative;
                 }
                 .wrapper-link-product-item {
                   height: 32px;
@@ -227,6 +236,7 @@
       width: 25%;
       .collection-sale-top {
         width: 100%;
+        height: 100px;
         .p {
           color: #e80d25;
           font-size: 14px;
@@ -247,6 +257,58 @@
           background-color: #ff72b4;
           margin: auto;
           margin-bottom: 20px;
+        }
+      }
+      .collection-sale-bottom {
+        background: #fff;
+        width: 90%;
+        margin: auto;
+        padding-top: 20px;
+        padding-bottom: 57px;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+}
+
+.wrapper-brands {
+  width: 100%;
+  .brands {
+    .wrapper-brands-top {
+      .brands-top {
+        .text-brands {
+          font-size: 30px;
+          font-weight: 700;
+          text-align: center;
+          margin-block-end: 15px;
+        }
+        .border-bottom-text-brands {
+          height: 2px;
+          width: 50px;
+          background-color: #ff72b4;
+          margin: auto;
+        }
+      }
+    }
+  }
+}
+
+.wrapper-best-product {
+  width: 100%;
+  .best-product {
+    .wrapper-best-product-top {
+      .best-product-top {
+        .text-best-product {
+          font-size: 30px;
+          font-weight: 700;
+          text-align: center;
+          margin-block-end: 15px;
+        }
+        .border-bottom-text-best-product {
+          height: 2px;
+          width: 50px;
+          background-color: #ff72b4;
+          margin: auto;
         }
       }
     }

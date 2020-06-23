@@ -1,0 +1,26 @@
+.wrapper-slide-brand {
+  margin-top: 40px;
+  .slick-slider {
+    .slick-list {
+      .slick-track {
+        .slick-slide {
+          .container-slide {
+            margin: 0 15px 30px 15px;
+            .image-slide-brand {
+              width: 150px;
+              height: 73px;
+              border: 1px solid #e5e5e5;
+            }
+            .image-slide-brand:hover {
+              border-color: #ff72b4;
+              cursor: pointer;
+            }
+          }
+        }
+        .container-slide:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.wrapper-selection-best-product {
+  margin-top: 20px;
+  .selection-best-product {
+    .wrapper-selection {
+      display: flex;
+      justify-content: center;
+      .selection {
+        margin: 0 20px;
+        .click-selection {
+          font-weight: 700;
+          font-size: 14px;
+          background-color: transparent;
+          border: none;
+        }
+        .click-selection:focus {
+          color: #ff72b4;
+          outline: none;
+        }
+        .click-selection:hover {
+          cursor: pointer;
+          color: #ff72b4;
+        }
+      }
+    }
+  }
+}

@@ -1,5 +1,7 @@
-.wrapper-header {
+.wrapper-background-header {
   background: rgba(240, 240, 240, 0.3);
+}
+.wrapper-header {
   .wrapper-top-header {
     display: flex;
     border-bottom: 1px solid #999;
@@ -233,7 +235,6 @@
           justify-content: center;
           align-items: center;
           .input-search {
-            display: none;
             font-size: 16px;
             width: 170px;
             padding: 10px;
@@ -249,9 +250,6 @@
           .icon-search {
             cursor: pointer;
             color: #ff72b4;
-          }
-          .input-search {
-            display: block;
           }
         }
         .wrapper-account {
@@ -286,6 +284,12 @@
           }
           .wrapper-login {
             display: block;
+          }
+        }
+        .wrapper-product-love:hover {
+          .icon-selection {
+            color: #ff72b4;
+            cursor: pointer;
           }
         }
       }

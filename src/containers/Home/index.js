@@ -1,57 +1,22 @@
-import React, { useState } from "react";
+import React from "react";
 import { Container } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import { DirectionsBike, ThumbsUpDown, LocalAtm } from "@material-ui/icons";
 
 import Slide from "./components/Slide";
 import "./components/Styled.scss";
-import Slider from "./components/newSlide"
+import Slider from "./components/newSlide";
+import BestProduct from "./components/BestProduct";
+import SliderBrands from "./components/SlideBrands";
+import CollectionNew from "./components/CollectionNew"
 import AdvItem1 from "../../assets/image/adv-item-1.jpg";
 import AdvItem2 from "../../assets/image/adv-item-2.jpg";
 import AdvItem3 from "../../assets/image/adv-item-3.jpg";
 import AdvItem4 from "../../assets/image/adv-item-4.jpg";
 import AdvItem5 from "../../assets/image/adv-item-5.jpg";
 import AdvItem6 from "../../assets/image/adv-item-6.jpg";
-import ListCollectionNew1 from "../../assets/image/list-collection-new-1.jpg";
-import ListCollectionNew2 from "../../assets/image/list-collection-new-2.jpg";
-import ListCollectionNew3 from "../../assets/image/list-collection-new-3.jpg";
-import ListCollectionNew4 from "../../assets/image/list-collection-new-4.jpg";
-import ImgProductItem1 from "../../assets/image/img-product-item-1.jpg";
-import ImgProductItem2 from "../../assets/image/img-product-item-2.jpg";
-import ImgProductItem3 from "../../assets/image/img-product-item-3.jpg";
-import ImgProductItem4 from "../../assets/image/img-product-item-4.jpg";
-import ImgProductItem5 from "../../assets/image/img-product-item-5.jpg";
-import ImgProductItem6 from "../../assets/image/img-product-item-6.jpg";
-import ImgProductItem7 from "../../assets/image/img-product-item-7.jpg";
-import ImgProductItem8 from "../../assets/image/img-product-item-8.jpg";
-import ImgSlideSale1 from "../../assets/image/img-slide-1.jpg"
-import ImgSlideSale2 from "../../assets/image/img-slide-2.jpg"
-import ImgSlideSale3 from "../../assets/image/img-slide-3.jpg"
 
 export default function Home() {
-  const [newCollection, setNewCollection] = useState(ImgProductItem1);
-  const [newCollection2, setNewCollection2] = useState(ImgProductItem2);
-
-  const onClickCollection1 = () => {
-    setNewCollection(ImgProductItem1);
-    setNewCollection2(ImgProductItem2);
-  };
-
-  const onClickCollection2 = () => {
-    setNewCollection(ImgProductItem3);
-    setNewCollection2(ImgProductItem4);
-  };
-
-  const onClickCollection3 = () => {
-    setNewCollection(ImgProductItem5);
-    setNewCollection2(ImgProductItem6);
-  };
-
-  const onClickCollection4 = () => {
-    setNewCollection(ImgProductItem7);
-    setNewCollection2(ImgProductItem8);
-  };
-
   return (
     <div>
       <Slide />
@@ -178,96 +143,7 @@ export default function Home() {
         </div>
         <div className="wrapper-collection">
           <div className="collection">
-            <div className="wrapper-collection-new">
-              <div className="collection-new">
-                <div className="collection-new-top">
-                  <p className="text-collection-new-top">NEW COLLECTION</p>
-                  <div className="border-bottom-new-collection" />
-                </div>
-                <div className="collection-new-bottom">
-                  <div className="collection-new-bottom-left">
-                    <button
-                      onClick={onClickCollection1}
-                      className="img-list-product-new"
-                    >
-                      <img src={ListCollectionNew1} alt="" />
-                    </button>
-                    <button
-                      onClick={onClickCollection2}
-                      className="img-list-product-new"
-                    >
-                      <img src={ListCollectionNew2} alt="" />
-                    </button>
-                    <button
-                      onClick={onClickCollection3}
-                      className="img-list-product-new"
-                    >
-                      <img src={ListCollectionNew3} alt="" />
-                    </button>
-                    <button
-                      onClick={onClickCollection4}
-                      className="img-list-product-new"
-                    >
-                      <img src={ListCollectionNew4} alt="" />
-                    </button>
-                  </div>
-                  <div className="collection-new-bottom-right">
-                    <div className="wrapper-img-product-new">
-                      <Link className="img-product-new" to="/">
-                        <img
-                          className="img-product-before"
-                          src={newCollection}
-                          alt=""
-                        />
-                        <img
-                          className="img-product-after"
-                          src={newCollection2}
-                          alt=""
-                        />
-                      </Link>
-                    </div>
-                    <div className="wrapper-product-new">
-                      <div className="product-new">
-                        <p className="title-product">PRODUCT SEXY GIRLS</p>
-                        <p className="description-product">
-                          The history of T-shirt is very interesting. The
-                          T-shirt has been a part of clothing since ancient
-                          Egypt. A type of modern T-shirt was developed in
-                          England in the end of 19th century. The idea of a
-                          T-shirt came to the USA during the
-                        </p>
-                        <p className="title-product">SHOP THIS STYLE</p>
-                        <div className="wrapper-list-product-item">
-                          <div className="list-product-item">
-                            <Link className="img-product-item" to="/">
-                              <img src={ListCollectionNew4} alt="" />
-                            </Link>
-                          </div>
-                          <div className="list-product-item">
-                            <Link className="img-product-item" to="/">
-                              <img src={ListCollectionNew4} alt="" />
-                            </Link>
-                          </div>
-                          <div className="list-product-item">
-                            <Link className="img-product-item" to="/">
-                              <img src={ListCollectionNew4} alt="" />
-                            </Link>
-                          </div>
-                          <div className="list-product-item">
-                            <Link className="img-product-item" to="/">
-                              <img src={ListCollectionNew4} alt="" />
-                            </Link>
-                          </div>
-                        </div>
-                        <Link className="wrapper-link-product-item" to="/">
-                          VIEW MORE LOOKS
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <CollectionNew />
             <div className="wrapper-collection-sale">
               <div className="collection-sale">
                 <div className="collection-sale-top">
@@ -278,22 +154,7 @@ export default function Home() {
                 <div className="collection-sale-bottom">
                   <div className="wrapper-slide-on-sale">
                     <div className="slide-on-sale">
-                      <div className="slide-1">
-                        <div className="container-slide">
-                          <img src={ImgSlideSale1} alt="" />
-                        </div>
-                        <div className="container-slide">
-                          <img src={ImgSlideSale2} alt="" />
-                        </div>
-                        <div className="container-slide">
-                          <img src={ImgSlideSale3} alt="" />
-                        </div>
-                      </div>
-                    </div>
-                    <div className="switch-slide">
-                      <button className="click-slide-1" />
-                      <button className="click-slide-2" />
-                      <button className="click-slide-3" />
+                      <Slider />
                     </div>
                   </div>
                 </div>
@@ -301,10 +162,34 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <div className="wrapper-brands">
+          <div className="brands">
+            <div className="wrapper-brands-top">
+              <div className="brands-top">
+                <p className="text-brands">OUR BRANDS</p>
+                <div className="border-bottom-text-brands" />
+              </div>
+            </div>
+            <div className="collection-brands-bottom">
+              <SliderBrands />
+            </div>
+          </div>
+        </div>
+
+        <div className="wrapper-best-product">
+          <div className="best-product">
+            <div className="wrapper-best-product-top">
+              <div className="best-product-top">
+                <p className="text-best-product">BEST SELLERS PRODUCTS</p>
+                <div className="border-bottom-text-best-product" />
+              </div>
+            </div>
+            <div className="collection-best-product-bottom">
+              <BestProduct />
+            </div>
+          </div>
+        </div>
       </Container>
-      <div >
-        <Slider />
-      </div>
     </div>
   );
 }
