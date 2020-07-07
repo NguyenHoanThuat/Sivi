@@ -8,7 +8,7 @@ import "./components/Styled.scss";
 import Slider from "./components/newSlide";
 import BestProduct from "./components/BestProduct";
 import SliderBrands from "./components/SlideBrands";
-import CollectionNew from "./components/CollectionNew"
+import CollectionNew from "./components/CollectionNew";
 import AdvItem1 from "../../assets/image/adv-item-1.jpg";
 import AdvItem2 from "../../assets/image/adv-item-2.jpg";
 import AdvItem3 from "../../assets/image/adv-item-3.jpg";
